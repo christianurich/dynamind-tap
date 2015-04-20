@@ -1,4 +1,4 @@
-# Homebrew Dynamind
+#  DynaMind-ToolBox Tap
 
 Mac [homebrew][] tap to install the [DynaMind-ToolBox][]
 
