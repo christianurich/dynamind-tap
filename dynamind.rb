@@ -6,7 +6,8 @@ class Dynamind < Formula
   url "https://github.com/iut-ibk/DynaMind-ToolBox/releases/download/v0.8dev/dynamind-v0.8dev.zip"
   version "0.8dev"
   sha256 "b3e637433a8207d95f197ae6f3e5852bebd0d75e2beb14900dcd14e62de4bd05"
-
+  head "https://github.com/iut-ibk/DynaMind-ToolBox.git", :branch => 'master'
+  
   depends_on "cmake" => :build
   depends_on "git" => :build
   depends_on "libqglviewer"
@@ -17,13 +18,14 @@ class Dynamind < Formula
   depends_on "boost"
   depends_on "sfcgal"
   depends_on "netcdf"
+  depends_on "geos"
   depends_on "python" => :recommended
 
   def install
     system "pip install reimport"
     system "pip install netCDF4"
     system "cmake", ".", *std_cmake_args, "-DWITH_PLUGIN_GDALMODULE=True",  "-DWITH_DOC=True",  "-DPYTHON_LIBRARY='#{%x(python-config --prefix).chomp}/lib/libpython2.7.dylib'",
-      "-DPYTHON_INCLUDE_DIR='#{%x(python-config --prefix).chomp}/include/python2.7'"
+      "-DPYTHON_INCLUDE_DIR='#{%x(python-config --prefix).chomp}/include/python2.7'",  "-DWITH_PLUGIN_GDALMODULE=ON", "-DWITH_PLUGIN_GDALDRAINAGE=ON"
     system "make", "install" # if this fails, try separate make/make install steps
 
 
