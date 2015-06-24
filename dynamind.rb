@@ -14,7 +14,7 @@ class Dynamind < Formula
   depends_on "gdal"
   depends_on "libspatialite"
   depends_on "cgal"
-  depends_on "qt"
+  depends_on "qt5"
   depends_on "boost"
   depends_on "sfcgal"
   depends_on "netcdf"
@@ -25,8 +25,12 @@ class Dynamind < Formula
     system "pip install reimport"
     system "pip install netCDF4"
     system "cmake", ".", *std_cmake_args, "-DWITH_PLUGIN_GDALMODULE=True",  "-DWITH_DOC=True",  "-DPYTHON_LIBRARY='#{%x(python-config --prefix).chomp}/lib/libpython2.7.dylib'",
-      "-DPYTHON_INCLUDE_DIR='#{%x(python-config --prefix).chomp}/include/python2.7'",  "-DWITH_PLUGIN_GDALMODULE=ON", "-DWITH_PLUGIN_GDALDRAINAGE=ON"
-    system "make", "install" # if this fails, try separate make/make install steps
+      "-DPYTHON_INCLUDE_DIR='#{%x(python-config --prefix).chomp}/include/python2.7'",  "-DWITH_PLUGIN_GDALMODULE=ON", "-DWITH_PLUGIN_GDALDRAINAGE=ON",  "-DWITH_PLUGIN_PERFORMANCE_ASSESSMENT=True"
+    
+    
+    system "make", "install" 
+    
+    # if this fails, try separate make/make install steps
 
 
   end
