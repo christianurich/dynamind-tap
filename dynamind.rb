@@ -24,6 +24,7 @@ class Dynamind < Formula
   def install
     system "pip install reimport"
     system "pip install netCDF4"
+    system "pip install sphinx"
     system "cmake", ".", *std_cmake_args, "-DWITH_PLUGIN_GDALMODULE=True",  "-DUSEQT5=ON", "-DWITH_DOC=True",  "-DPYTHON_LIBRARY='#{%x(python-config --prefix).chomp}/lib/libpython2.7.dylib'",
       "-DPYTHON_INCLUDE_DIR='#{%x(python-config --prefix).chomp}/include/python2.7'",  "-DWITH_PLUGIN_GDALMODULE=ON", "-DWITH_PLUGIN_GDALDRAINAGE=ON",  "-DWITH_PLUGIN_PERFORMANCE_ASSESSMENT=True"
     
