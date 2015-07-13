@@ -19,6 +19,7 @@ class Dynamind < Formula
   depends_on "sfcgal"
   depends_on "netcdf"
   depends_on "geos"
+  depends_on "swig"
   depends_on "python" => :recommended
 
   def install
