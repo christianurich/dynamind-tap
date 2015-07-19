@@ -4,7 +4,7 @@ class Dynamind < Formula
   homepage "https://github.com/iut-ibk/DynaMind-ToolBox"
   #url "file:///tmp/dynamind-0.8.tar.gz"
   url "https://github.com/iut-ibk/DynaMind-ToolBox/archive/v0.8.0-beta.2.tar.gz"
-  version "0.8-beta.2"
+  version "0.8-beta.3"
   sha256 "062e8327e5b169692769a535cba85b9d6d100bcfacbc85806fd853bfc83fa395"
   head "https://github.com/iut-ibk/DynaMind-ToolBox.git", :branch => 'master'
   
