@@ -5,7 +5,7 @@ class Dynamind < Formula
   #url "file:///tmp/dynamind-0.8.tar.gz"
   url "https://github.com/iut-ibk/DynaMind-ToolBox/archive/v0.8.0-beta.4.tar.gz"
   version "0.8-beta.4"
-  sha256 "cc7e362251032c95547b0278fcdbb297e3d3c066e37c73dd3d466cc8717468f5"
+  sha256 "90b5ff4ad7280227af7c4a34ef629958e82969a5f7f9bf438050d3695d53869f"
   head "https://github.com/iut-ibk/DynaMind-ToolBox.git", :branch => 'master'
   
   depends_on "cmake" => :build
