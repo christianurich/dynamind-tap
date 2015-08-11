@@ -7,6 +7,7 @@ class Dynamind < Formula
   version "0.8-beta.4"
   sha256 "64b1be13e47f9de30e9423f1e1aab2a112bea75c97b622dee5e5877c1dd9caed"
   head "https://github.com/iut-ibk/DynaMind-ToolBox.git", :branch => 'master'
+  experimental "https://github.com/iut-ibk/DynaMind-ToolBox.git", :branch => 'sqlite_extension'
   
   depends_on "cmake" => :build
   depends_on "git" => :build
@@ -20,6 +21,7 @@ class Dynamind < Formula
   depends_on "netcdf"
   depends_on "geos"
   depends_on "swig"
+  depends_on "sqlite"
   depends_on "python" => :recommended
 
   def install
