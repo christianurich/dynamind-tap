@@ -12,6 +12,7 @@ class Dynamind < Formula
   depends_on "cmake" => :build
   depends_on "git" => :build
   depends_on "libqglviewer"
+  depends_on "postgis"
   depends_on "gdal"
   depends_on "libspatialite"
   depends_on "cgal"
