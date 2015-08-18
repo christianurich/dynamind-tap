@@ -5,7 +5,7 @@ class Dynamind < Formula
   #url "file:///tmp/dynamind-0.8.tar.gz"
   url "https://github.com/iut-ibk/DynaMind-ToolBox/archive/v0.8.0.tar.gz"
   version "0.8.0"
-  sha256 "64b1be13e47f9de30e9423f1e1aab2a112bea75c97b622dee5e5877c1dd9caed"
+  sha256 "fa6f7e482d84029c9768af4f2e8bec1ffeb096049104fb9ade7f9793f2a8ebfe"
   #head "https://github.com/iut-ibk/DynaMind-ToolBox.git", :branch => 'master'
   head "https://github.com/iut-ibk/DynaMind-ToolBox.git", :branch => 'sqlite_extension'
   
