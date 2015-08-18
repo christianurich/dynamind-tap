@@ -3,8 +3,8 @@
 class Dynamind < Formula
   homepage "https://github.com/iut-ibk/DynaMind-ToolBox"
   #url "file:///tmp/dynamind-0.8.tar.gz"
-  url "https://github.com/iut-ibk/DynaMind-ToolBox/archive/v0.8.0-beta.4.tar.gz"
-  version "0.8-beta.4"
+  url "https://github.com/iut-ibk/DynaMind-ToolBox/archive/v0.8.0.tar.gz"
+  version "0.8.0"
   sha256 "64b1be13e47f9de30e9423f1e1aab2a112bea75c97b622dee5e5877c1dd9caed"
   #head "https://github.com/iut-ibk/DynaMind-ToolBox.git", :branch => 'master'
   head "https://github.com/iut-ibk/DynaMind-ToolBox.git", :branch => 'sqlite_extension'
