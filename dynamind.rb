@@ -34,6 +34,7 @@ class Dynamind < Formula
     system "pip install paramiko"
     system "pip install gsconfig"
     system "pip install psycopg2"
+    system "pip install dropbox"
     
     system "cmake", ".", *std_cmake_args, "-DWITH_PLUGIN_GDALMODULE=True", "-DSQLITE3_INCLUDE_DIR=/usr/local/opt/sqlite/include", "-DSQLITE3_LIBRARY=/usr/local/opt/sqlite/lib/libsqlite3.dylib", "-DUSEQT5=ON", "-DWITH_DOC=True",  "-DPYTHON_LIBRARY='#{%x(python-config --prefix).chomp}/lib/libpython2.7.dylib'",
       "-DPYTHON_INCLUDE_DIR='#{%x(python-config --prefix).chomp}/include/python2.7'",  "-DWITH_VIEWER=OFF", "-DWITH_PLUGIN_GDALMODULE=ON", "-DWITH_PLUGIN_GDALDRAINAGE=ON",  "-DWITH_PLUGIN_PERFORMANCE_ASSESSMENT=True", "-DWITH_PLUGIN_BASICMODULES=OFF"
