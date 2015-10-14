@@ -6,8 +6,8 @@ class Dynamind < Formula
   url "https://github.com/iut-ibk/DynaMind-ToolBox/archive/v0.8.0.tar.gz"
   version "0.8.0"
   sha256 "fa6f7e482d84029c9768af4f2e8bec1ffeb096049104fb9ade7f9793f2a8ebfe"
-  #head "https://github.com/iut-ibk/DynaMind-ToolBox.git", :branch => 'master'
-  head "https://github.com/iut-ibk/DynaMind-ToolBox.git", :branch => 'sqlite_extension'
+  head "https://github.com/iut-ibk/DynaMind-ToolBox.git", :branch => 'master'
+  #head "https://github.com/iut-ibk/DynaMind-ToolBox.git", :branch => 'sqlite_extension'
   
   depends_on "cmake" => :build
   depends_on "git" => :build
