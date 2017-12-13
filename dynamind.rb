@@ -3,11 +3,10 @@
 class Dynamind < Formula
   homepage "https://github.com/iut-ibk/DynaMind-ToolBox"
   #url "file:///tmp/dynamind-0.8.tar.gz"
-  url "https://github.com/iut-ibk/DynaMind-ToolBox/archive/v0.10.5.zip"
+  url "https://github.com/christianurich/DynaMind-ToolBox/archive/v0.12.11.zip"
   version "0.10.5"
-  sha256 "4ae2d92fffdc1a95e040866cd41509e2e91606298521c02c1deb5a8fbc8c8353"
+  sha256 "2d53c92302c1dd3b09fa184eb191addf91f0762373650b2941daa0841da273f6"
   head "https://github.com/christianurich/DynaMind-ToolBox.git", :branch => 'master'
-  #head "https://github.com/iut-ibk/DynaMind-ToolBox.git", :branch => 'sqlite_extension'
   
   depends_on "cmake" => :build
   depends_on "git" => :build
