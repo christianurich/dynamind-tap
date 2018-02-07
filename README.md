@@ -7,7 +7,7 @@ To tap and install the DynaMind-ToolBox run:
 ```
 brew tap osgeo/osgeo4mac
 brew tap christianurich/dynamind 
-brew install dynamind --HEAD
+brew install dynamind
 ```
 
 [homebrew]:http://brew.sh
