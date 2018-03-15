@@ -22,7 +22,7 @@ class Dynamind < Formula
   depends_on "geos"
   depends_on "swig"
   depends_on "sqlite" => ["with-functions"]
-  depends_on "python" => :recommended
+  depends_on "python2" => :recommended
 
   def install
     system "pip2 install reimport"
