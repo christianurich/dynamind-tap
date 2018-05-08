@@ -3,9 +3,9 @@
 class Dynamind < Formula
   homepage "https://github.com/iut-ibk/DynaMind-ToolBox"
   #url "file:///tmp/dynamind-0.8.tar.gz"
-  url "https://github.com/christianurich/DynaMind-ToolBox/archive/v0.12.14_2.zip"
-  version "0.12.14_2"
-  sha256 "8bd6b469da653e1a782b632ecd2ec585ddfc0b5ffd564cb00815d2de41b3a592"
+  url "https://github.com/christianurich/DynaMind-ToolBox/archive/v0.12.14_7.zip"
+  version "0.12.14_7"
+  sha256 "75e786ad8b413af7c17ee5cf1c3a71e3f925fbc9d4fa8f9b40f1151226d3fd57"
   head "https://github.com/christianurich/DynaMind-ToolBox.git", :branch => 'master'
   
   depends_on "cmake" => :build
