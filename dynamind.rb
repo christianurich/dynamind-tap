@@ -6,7 +6,7 @@ class Dynamind < Formula
   url "https://github.com/christianurich/DynaMind-ToolBox/archive/v050918.zip"
   version "v050918"
   sha256 "814daf99d5f455b5e62909baa726f9dc1aa8aa64226b419a8c02958f54ad58ba"
-  head "https://github.com/christianurich/DynaMind-ToolBox.git", :branch => 'master'
+  # head "https://github.com/christianurich/DynaMind-ToolBox.git", :branch => 'master'
   
   depends_on "cmake" => :build
   depends_on "git" => :build
