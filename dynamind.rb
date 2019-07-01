@@ -36,7 +36,7 @@ class Dynamind < Formula
     system "pip2 install dropbox"
     
     system "cmake", ".", *std_cmake_args, "-DWITH_PLUGIN_GDALMODULE=True", "-DSQLITE3_INCLUDE_DIR=/usr/local/opt/sqlite/include", "-DSQLITE3_LIBRARY=/usr/local/opt/sqlite/lib/libsqlite3.dylib", "-DUSEQT5=ON", "-DWITH_DOC=True",  "-DPYTHON_LIBRARY='#{%x(python2-config --prefix).chomp}/lib/libpython2.7.dylib'",
-      "-DPYTHON_INCLUDE_DIR='#{%x(python2-config --prefix).chomp}/include/python2.7'",  "-DWITH_DOC=ON", "-DWITH_VIEWER=OFF" , "-DWITH_PLUGIN_GDALMODULE=ON", "-DWITH_PLUGIN_GDALDRAINAGE=ON",  "-DWITH_PLUGIN_PERFORMANCE_ASSESSMENT=True", "-DWITH_PLUGIN_BASICMODULES=OFF"
+      "-DPYTHON_INCLUDE_DIR='#{%x(python2-config --prefix).chomp}/include/python2.7'",  "-DWITH_DOC=OFF", "-DWITH_VIEWER=OFF" , "-DWITH_PLUGIN_GDALMODULE=ON", "-DWITH_PLUGIN_GDALDRAINAGE=ON",  "-DWITH_PLUGIN_PERFORMANCE_ASSESSMENT=True", "-DWITH_PLUGIN_BASICMODULES=OFF"
     
     
     system "make", "install" 
